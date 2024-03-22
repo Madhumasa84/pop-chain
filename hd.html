@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech for Farmers</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .farmer-button {
+            background-color: #00b894; /* Green color for farmer button */
+            color: white;
+        }
+        
+        .non-farmer-button {
+            background-color: #cccccc;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our Fintech Platform!</h1>
+    <p>Who are you?</p>
+    <div class="button-container">
+        <button class="farmer-button" onclick="goToFarmerPage()">Farmer</button>
+        <button class="non-farmer-button" onclick="goToNonFarmerPage()">Non-Farmer</button>
+    </div>
+    <script>
+        function goToFarmerPage() {
+            window.location.href = "farmer.html"; // Replace "farmer.html" with your actual farmer page
+        }
+        function goToNonFarmerPage() {
+            window.location.href = "non-farmer.html"; // Replace "non-farmer.html" with your actual non-farmer page
+        }
+    </script>
+</body>
+</html>
